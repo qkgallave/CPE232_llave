@@ -1,0 +1,12 @@
+---
+- name: My first play
+  hosts: servers
+
+  tasks:
+    - name: Print Message
+      debug:
+        msg: Munchlax OP sleep stall
+    - name: Ping hosts
+      ansible.builtin.ping:
+      debug:
+        msg: ping pong
